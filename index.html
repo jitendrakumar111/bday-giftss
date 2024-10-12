@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Unlock Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Birthday Wish Message -->
+        <div class="bday-message">
+            <h1>🎉 Happy Birthday! 🎉</h1>
+            <p>Congratulations on your special day! We hope it’s filled with joy, surprises, and wonderful memories. Unlock your surprises below as the day goes by!</p>
+        </div>
+
+        <!-- Gift Container Heading -->
+        <h2>Congratulations! Your gifts are waiting to be unlocked:</h2>
+
+        <!-- Gift Cards Container -->
+        <div id="giftsContainer"></div>
+    </div>
+
+    <!-- Popup for gift unlock -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popupClose" class="close">&times;</span>
+            <p id="popupMessage"></p>
+            <a id="giftLink" href="#" target="_blank">Click here to claim your gift</a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

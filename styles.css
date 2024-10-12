@@ -1,0 +1,188 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px; /* Limit max width for larger screens */
+    margin: 0 auto;
+}
+
+.bday-message {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffeb3b;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bday-message h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bday-message p {
+    font-size: 18px;
+    color: #555;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#giftsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Gift card styling */
+.gift-card {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.gift-card.locked {
+    background-color: #d3d3d3;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.gift-card.unlocked {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.gift-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.gift-card p {
+    font-size: 16px;
+}
+
+/* Popup styling */
+#popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjust gift card size on smaller screens */
+    .gift-card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .gift-card h2 {
+        font-size: 16px;
+    }
+
+    .gift-card p {
+        font-size: 14px;
+    }
+
+    /* Make birthday message smaller */
+    .bday-message {
+        padding: 15px;
+        max-width: 90%; /* Take up most of the screen on mobile */
+    }
+
+    .bday-message h1 {
+        font-size: 28px; /* Reduce the font size */
+    }
+
+    .bday-message p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Stack the gift cards vertically for small screens */
+    #giftsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gift-card {
+        width: 100%;
+        max-width: 300px; /* Limit width on smaller screens */
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Further adjust birthday message for very small screens */
+    .bday-message {
+        padding: 10px;
+        max-width: 100%; /* Ensure it takes the full width on small screens */
+    }
+
+    .bday-message h1 {
+        font-size: 24px;
+    }
+
+    .bday-message p {
+        font-size: 14px;
+    }
+  
+   .container {
+        margin-top: 300px;
+      align-item:centre;
+    }
+  
+   
+}
+
