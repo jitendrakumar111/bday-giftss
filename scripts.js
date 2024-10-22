@@ -1,11 +1,11 @@
 // Set initial gift unlock times and states
 const gifts = [
     { unlockTime: '22:30', link: 'https://example.com/gift1', unlocked: false, message: "Happy Birthday! Here is your first gift as celebration!" },
-    { unlockTime: '02:30', link: 'https://drive.google.com/file/d/1dkKVFA-YbUrOEnmSp-Z8lEvUX3CM7CRa/view?usp=sharing', unlocked: false, message: "goodmorning babe! Here is love letter for you!" },
+    { unlockTime: '02:30', link: 'https://drive.google.com/file/d/1dkKVFA-YbUrOEnmSp-Z8lEvUX3CM7CRa/view?usp=sharing', unlocked: false, message: "goodmorning babe! Here is something for you!" },
     { unlockTime: '06:30', link: 'https://drive.google.com/file/d/1w09fJSzvSdE8qAnbcY8Q9_C5cKmeHwIV/view?usp=sharing', unlocked: false, message: "Surprise! enjoy song created by me as you know our lyrics!" },
     { unlockTime: '10:30', link: 'https://drive.google.com/file/d/1j7Y7Dcq_NgN9FTaGs8ABDUdKPHUNLU4G/view?usp=sharing', unlocked: false, message: "Unseen video as gift just for you!" },
     { unlockTime: '14:30', link: 'https://example.com/gift5', unlocked: false, message: "Though I can’t give you your gift today but it's added in list, I promise it’s on its way, just like all the love I’ll always have for you. Something special is coming soon, just like you deserve! 💖✨" },
-    { unlockTime: '18:30', link: 'https://heyzine.com/flip-book/714ec342d3.html', unlocked: false, message: "babe, here is book written by me as last gift, read and enjoy, love u!" }
+    { unlockTime: '18:30', link: 'https://heyzine.com/flip-book/714ec342d3.html', unlocked: false, message: "dear, here is book written by me as last gift, read and enjoy, love u!" }
 ];
 
 const giftsContainer = document.getElementById('giftsContainer');
